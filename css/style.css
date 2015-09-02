@@ -65,11 +65,34 @@ nav a:hover{
 	background: orange;
 }
 
+@media screen and (max-width: 360px){
+	
+	nav li{
+		display: inline-block;
+		margin-right: 20px;
+	}
+
+	.bigimg{
+		display:none;
+	}
+
+	.biggestimg{
+		display:none;
+	}
+}
+
 @media screen and (min-width: 600px){
 	
 	nav li{
 		display: inline-block;
 		margin-right: 20px;
+	}
+	.bigimg{
+		display:right;
+	}
+
+	.biggestimg{
+		display:none;
 	}
 }
 
@@ -89,6 +112,14 @@ nav a:hover{
 	footer{
 		clear: both;
 
+	}
+
+	.bigimg{
+		display:none;
+	}
+
+	.biggestimg{
+		display:right;
 	}
 	
 }
