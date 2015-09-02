@@ -19,6 +19,7 @@
 
 body{
 	background-color: #d7eaf4;
+	font-style: Helvetica, Arial, sans-serif;
 }
 
 
@@ -65,20 +66,12 @@ nav a:hover{
 	background: orange;
 }
 
-@media screen and (max-width: 360px){
-	
-	nav li{
-		display: inline-block;
-		margin-right: 20px;
-	}
+.bigimg{
+	display:none;
+}
 
-	.bigimg{
-		display:none;
-	}
-
-	.biggestimg{
-		display:none;
-	}
+.biggestimg{
+	display:none;
 }
 
 @media screen and (min-width: 600px){
@@ -88,12 +81,12 @@ nav a:hover{
 		margin-right: 20px;
 	}
 	.bigimg{
-		display:right;
+		display:block;
+	}
+	.artimg{
+		display: block;
 	}
 
-	.biggestimg{
-		display:none;
-	}
 }
 
 @media screen and (min-width: 800px){
@@ -114,12 +107,13 @@ nav a:hover{
 
 	}
 
-	.bigimg{
-		display:none;
+	.biggestimg{
+		display:block;
+		float: right;
 	}
 
-	.biggestimg{
-		display:right;
+	.bigimg{
+		display: none;
 	}
 	
 }
@@ -161,30 +155,43 @@ h1, h2, h3{
 .related h3{
 	color: #c6effb;
 }
-.articles{
+
+.related ul{
+	list-style: none;
+	text-align: left;
+	margin-bottom: 0px;
+	padding-left: 0;
+}
+
+.related li:last-child{
+	margin-bottom: 0px;
+}
+
+.related li{
 	border-bottom: 2px solid #aba7d1;
 	padding-bottom: 20px;
-	margin-bottom: -17px
+	padding-left: 0;	
+	
 }
 
-.articles a{
+.related a{
 	position:relative;
-	left: 400px;
+	left: 200px;
 }
 
-.articles a:link{
+.related a:link{
 	color: #caf6ff;
 }
 
-.articles a:active{
+.related a:active{
 	color: #caf6ff;
 }
 
-.articles a:hover{
+.related a:hover{
 	color: #caf6ff;
 }
 
-.articles a:visited{
+.related a:visited{
 	color: #caf6ff;
 }
 
@@ -197,6 +204,7 @@ h1, h2, h3{
 
 .bottom ul{
 	list-style: none;
+	margin-top: 0;
 }
 
 .bottom li{
