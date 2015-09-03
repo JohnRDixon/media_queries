@@ -308,6 +308,10 @@ h1{
 		border-radius: 2px;
 	}
 
+	#home{
+		padding-bottom: 0;
+	}
+
 
 	.main_navigation ul{
 		padding: 0;
